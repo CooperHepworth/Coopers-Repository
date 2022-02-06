@@ -1,0 +1,64 @@
+---
+title: "Case Study W01"
+author: "Cooper Hepworth"
+date: "1/18/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r}
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+plot(x = iris$Sepal.Length,
+     y = iris$Petal.Length, 
+     col = iris$Species, pch = 19)
+```
+
+```{r}
+
+paragraph1_source <- 'https://priceonomics.com/how-much-money-do-communications-majors-make/'
+print(paragraph1_source)
+paragraph1 <- "I found the presentation of this article to be pretty bland. There was only 1 chart and 2 tables utilized and it conveyed a very narrow view of the subject. The aim of the article was to explain that communications majors do not make enough money to handle the debt that they incurr to get said education. I do see the point in streamlining college for more individuals to finish in less time and acquire more real world job experience"
+print(paragraph1)
+```
+
+```{r}
+
+paragraph2_source <- 'https://priceonomics.com/the-companies-where-employees-most-often-get/'
+print(paragraph2_source)
+paragraph2 <- "I found this article to housed more charts than the previous one. The information was conveyed for easy access. Being about payday loans the author seeks to showcase what industry's employees take out the most payday loans as well as provide an explanation. The author is able to showcase the data just fine. I am not sure where they got the conclusion from the data as it seemed speculative."
+print(paragraph2)
+```
+
+```{r}
+
+paragraph3_source <- 'https://priceonomics.com/the-most-solar-places-in-america/'
+print(paragraph3_source)
+paragraph3 <- "This was probably the best article I found on this website. They actually bothered to use a scatterplot chart once along witht their usual horizontal bar charts. The article did a good job at incorporating days of sunlight throughout the year along with houses with solar panels per 100K. This was usefull. The conclusion they drew was that incentives and income drive solar panel ownership. Obviously."
+```
